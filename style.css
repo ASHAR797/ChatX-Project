@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Barlow',monospace;
+}
+body{
+scroll-behavior: smooth;
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+.NAV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #DEE0DD;
+    padding: 0px 2vw;
+}
+.NAV h1{
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    font-weight: 900;
+    transition: all ease .3s;
+}
+.NAV ul{
+    display: flex;
+    height: 2em;
+}
+.NAV ul a{
+    padding: 10px 25px;
+    color: #4d4949;
+    text-decoration: none;
+    transition: all ease .3s;
+}
+.NAV ul a:hover{
+  color: #a8a2a2;
+}
+#menu-icon{
+    display: none;
+    transition: .3s all ease;
+ }
+.sec-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 30em;
+    width: 100%;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+.accordion-body{
+    width: 25em;
+}
+
+.you{
+    height: 70vh;
+    width: 46%;
+    background-image: url('https://i.pinimg.com/564x/62/40/b6/6240b66d5c50c8661eee78b439a7d33c.jpg');
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 3.5px solid #11887A;
+    flex-wrap: wrap;
+}
+.you h1{
+    margin: 40px;
+    font-size: 35px;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+    transition: all ease .3s;
+}
+#h1{
+    color: gray;
+}
+.NAV h1:hover{
+    color: #a8a2a2;
+  }
+.you h1 span{
+    color: white;
+    text-shadow: 1px 1px 5px #11887A;
+}
+.input_div{
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input_div button{
+    padding: 13px 20px;
+    border: none;
+    color: white;
+    background-color: #11887A;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+
+.input_div input{
+    padding: 14px 28px;
+    padding-right: 135px;
+    border-radius: 20px;
+    border: none;
+    color: gray;
+    outline: none;
+    font-size: 15px;
+}
+.input_div  span > i {
+    display: none;
+}
+.friend{
+    height: 70vh;
+    width: 46%;
+    background-image: url('https://i.pinimg.com/564x/62/40/b6/6240b66d5c50c8661eee78b439a7d33c.jpg');
+    border-radius: 25px;
+    border: 3.5px solid #11887A;
+    display: flex;
+    justify-content: left;
+    padding: 2vw 2vw;
+    flex-direction: column;
+    overflow: auto;
+}
+.accordion {
+    width: 29em;
+}
+.accordion-button:focus{
+    border-color: #11887A ;
+    outline: 0;
+    box-shadow: black;
+}
+@media (max-width:600px) {
+    .NAV ul{
+        display: none;
+    }
+     #menu-icon{
+         display: flex;
+         font-size: 20px;
+        }
+        #h1{
+            font-size: 5.5vw;
+        }
+        .sec-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 47em;
+    }
+       .you , .friend{
+        width: 80%;
+        height: 46%;
+        }
+        .input_div input {
+            padding: 11px 13px;
+            padding-right: 40px;
+    }
+    .you h1 {
+        margin: 35px;
+        font-size: 30px;
+    }
+    .input_div input {
+        padding: 11px 15px;
+        padding-right: 8px;
+}
+.you button{
+    padding: 10px 15px
+}
+.accordion{
+    width: 90vw;
+}
+}
